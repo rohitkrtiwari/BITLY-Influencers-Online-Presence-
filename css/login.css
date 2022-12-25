@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.box-image{
+    width: 27%;
+    position: absolute;
+    top: 90px;
+    right: 750px;
+}
+
+.form{
+    position: absolute;
+    right: 13%;
+    width: 402px;
+    top: 75px;
+    box-shadow: 0 6px 20px rgb(0, 0, 0, 0.5);
+    padding: 37px 37px;
+    margin-bottom: 20px;
+}
+
+.form input{
+    padding: 8px 21px;
+    border: 1px solid rgb(196, 183, 211);
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+form h4{
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+form lable{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(83, 116, 83);
+}
+
+form .btn-submit{
+    text-decoration: none;
+    border: 1px solid #55df98;
+    padding: 9px 24px;
+    border-radius: 20px;
+    background: #55df98;
+    color: white;
+    font-weight: 600;
+    outline: none;
+}
+
+form .btn-submit:hover{
+    background: #40a873;
+    text-decoration: none;
+    color: white;
+}
+
+#snd-form{
+    display: none;
+}
+
+#thrd-form{
+    display: none;
+}
+
+.password-strength-indicator__list{
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 10px;
+}
+
+.password-strength-indicator__list li{
+    color: rgb(182, 174, 174);
+}
+
+.password-box{
+    display: flex;
+}
+
+.unmask-icon{
+    position: relative;
+    background: none;
+    border: none;
+    color: black;
+    right: 33px;
+    top: 17px;
+    font-weight: 900;
+    padding: 0 0;
+    height: 14px;
+}
+
+.unmask-icon:hover{
+    color: rgb(21, 63, 63);
+    background: none;
+}
+
+
+@media only screen and (max-width: 545px){
+
+    .box-image
+    {
+        display: none;
+    }
+
+    .form{
+        box-shadow: none;
+        margin: auto;
+        width: 100%;
+        right: 0;
+    }
+}
+

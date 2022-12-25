@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.navbar{
+    width: 87%;
+    margin: auto;
+    padding-top: 12px;
+}
+
+.grid{
+    display: flex;
+}
+
+.navbar__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 10%;
+}
+
+.navbar__logo img{
+    height: 76px;
+}
+
+.navbar__logo h2{
+    color: black;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.navbar__list{
+    display: flex;
+    align-items: center;
+    width: 65%;
+    padding-left: 50px;
+}
+
+.navbar__list a{
+    padding: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#search-bar{
+    padding: 4px 10px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(60, 60, 150);
+    outline: none;
+    color: black;
+    font-size: 16px;
+    display: none;
+    width: 70%;
+}
+
+#close-icon{
+    font-weight: 900;
+    color: rgb(20, 1, 1);
+    font-size: 22px;
+}
+
+.u-pull-right{
+    position: absolute;
+    right: 1%;
+    width: 25%;
+    top: 42px;
+}
+
+
+.login, .signup {
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: auto;
+}
+
+.login {
+    padding-right: 25px;
+
+}
+
+.signup {
+    border: 2px solid #55df98;
+    padding: 6px 19px;
+    color: #55df98;
+    border-radius: 20px;
+}
+
+.signup:hover {
+    border: 2px solid #55df98;
+    padding: 6px 19px;
+    background-color: #55df98;
+    color: white;
+    border-radius: 20px;
+}
+
+.main-grid{
+    height: 104vh;
+    background-image: linear-gradient(to bottom, #ffffff, #baf5a5);
+    margin-bottom: 20px;
+}
+
+.contact-heading {
+    font-size: 36px;
+    position: relative;
+    top: 40px;
+    margin-left: 42%;
+    font-weight: 500;
+}
+
+.contact__form {
+    padding: 30px 30px;
+    position: relative;
+    top: 80px;
+    width: 380px;
+    margin: 0px 34%;
+    background: white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+.contact-form__select{
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid rgb(196, 183, 211);
+    border-radius: 5px;
+    margin-top: 5px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.contact-form__select option{
+    padding: 10px;
+    font-size: 17px;
+    color: #55df98;
+    background-color: white;
+    border: 2px solid #55df98;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contact-form__select option:hover{
+    background-color: #55df98;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-form__input{
+    width: 89%;
+    padding: 12px 21px;
+    border: 1px solid rgb(196, 183, 211);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.contact-form__textarea{
+    width: 89%;
+    padding: 12px 21px;
+    border: 1px solid rgb(196, 183, 211);
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+form lable{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(83, 116, 83);
+}
+
+form .btn-submit{
+    text-decoration: none;
+    border: 1px solid #55df98;
+    padding: 9px 24px;
+    border-radius: 20px;
+    background: #55df98;
+    color: white;
+    font-weight: 600;
+    outline: none;
+}
+
+form .btn-submit:hover{
+    background: #40a873;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/*
+
+    Author: Rohit Tiwari
+    Created: 14 July 09:31 AM
+
+*/

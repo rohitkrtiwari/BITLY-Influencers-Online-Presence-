@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.fa-2x {
+    font-size: 2em;
+    cursor: pointer;
+}
+   
+.navbar{
+    background-color: rgb(27, 23, 23);
+    display: flex;
+    height: 60px;
+    position: sticky;
+}
+
+.navbar-logo {
+    padding: 12px 44px;
+}
+
+.navbar__logo{
+    display: flex;
+    align-items: center;
+    font-size: 29px;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.search-bar_div {
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.search-bar {
+    height: 70%;
+    margin-top: 9px;
+    width: 100%;
+    margin-left: 90px;
+    border: none;
+    background-color: rgba(182, 107, 107, 0.178);
+    border-radius: 5px;
+    padding: 0 50px;
+    font-size: 18px;
+    outline: none;
+}
+
+.search-icon {
+    position: relative;
+    left: 122px;
+    color: rgb(152, 158, 158);
+    top: 21px;
+}
+
+.search-bar:focus{
+    background: white;
+    border: none;
+}
+
+.search-bar::placeholder{
+    color: rgb(156, 160, 160);
+}
+
+.u-pull-right {
+    display: flex;
+    position: absolute;
+    right: 24px;
+    top: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.username {
+    color: rgb(177, 176, 176);
+    cursor: pointer;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.username h4{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.profileIco {
+    height: 30px;
+    width: 30px;
+    border-radius: 9%;
+    object-fit: cover;
+    object-position: center center;
+    margin-right: 10px;
+}
+
+.logout{
+    background-color: rgb(119, 158, 41);
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.logout a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    background-color: rgba(58, 31, 31, 0.637);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav__menuitem{
+    cursor: pointer;
+    padding: 7px 46px;
+}
+
+.menuColor{
+    color: rgb(208, 224, 226);
+    text-decoration: none;
+}
+
+.menuColor:hover{
+    color: coral;
+}
+
+.sidenav_submenu{
+    padding: 4px 10px;
+    list-style: none;
+}
+
+.sidenav_newPost{
+    margin-left: 26px;
+    margin-bottom: 25px;
+    list-style: none;
+}
+
+.newPost{
+    padding: 6px 43px;
+    background-color: rgb(202, 13, 13);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.main-body {
+    position: fixed;
+    width: 100%;
+    left: 225px;
+    overflow-y: auto;
+    height: 89%;
+}
+
+.posts_control-menu{
+    height: 71px;
+    background: antiquewhite;
+}
+
+.posts_control_bottom{
+    position: absolute;
+    left: 80px;
+    margin-top: 6px;
+}
+
+.posts_control_bottom a{
+    font-size: 14px;
+    text-decoration: none;
+    color: chocolate;
+    border: none;
+    padding: 0 5px;
+}
+
+.posts_control_bottom a:hover{
+    text-decoration: underline;
+}
+
+.posts_control-list {
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-top: 23px;
+}
+
+.posts_control {
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.user_posts{
+    list-style: none;
+    height: 55px;
+    margin: 10px 8px;
+    display: flex;
+    padding-top: 15px;
+    border: 1px solid rgb(158, 142, 142);
+}
+
+
+.user_posts_a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+    height: 22px;
+    z-index: 1;
+}
+
+.user_posts_a:hover{
+    text-decoration: underline;
+}
+
+.user_posts input {
+    margin-left: 41px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.mouseOver{
+    background-color: white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    margin-left: 8px;
+    border: none;
+}
+
+.posts_control_right{
+    position: absolute;
+    right: 245px;
+    font-size: 13px;
+    color: rgb(116, 88, 88);
+}
+
+.posts_control_right h1{
+    position: absolute;
+    right: 0px;
+    font-size: 15px;
+    color: black;
+    margin-bottom: 5px;
+    cursor: pointer;
+    inline-size: max-content;
+}
+
+.right_column{
+    position: relative;
+    margin-top: 11px;
+    margin-right: 5px;
+}
+
+.newpost_form {
+    position: absolute;
+    top: 70px;
+    left: 18%;
+    width: 82vw;
+}
+
+#newpost_form{
+    display: none;
+}
+
+.newpost_form_body{
+    width: 600px;
+    box-shadow: 0 6px 20px rgb(0, 0, 0, 0.5);
+    padding: 25px;
+    position: absolute;
+    left: 150px;
+    top: 60px;
+}
+
+.newpost_form_input_md{
+    border: 1px solid #ccc;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 91%;
+}
+
+.newpost_form_lable{
+    color: black;
+    font-size: 18px;
+    margin-top: 21px;
+}
+
+.newpost_post_discription{
+    max-width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.newpost_post_controls{
+    position: relative;
+}
+
+.imageSection{
+    display: flex;
+    align-items: baseline;
+    padding: 10px 0px;
+}
+
+.image {
+    width: 207px;
+    margin: 22px 2px;
+    margin-right: 585px;
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
+
+.imageUpload{
+    max-height: 125px;
+}
+
+.newpost_save_btn {
+    position: absolute;
+    left: 591px;
+    top: 6px;
+}
+
+.newpost_publish{
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgb(202, 13, 13);
+    color: white;
+}
+
+.newpost_draft{
+    text-decoration: none;
+    color: rgb(202, 13, 13);
+    font-weight: 600;
+    padding: 10px;
+    border: navajowhite;
+    background: none;
+}
+
+.back_btn{
+    text-decoration: none;
+    color: black;
+    left: 153px;
+    position: relative;
+    cursor: pointer;
+}
+
+.settings_Section {
+    position: fixed;
+    left: 250px;
+    width: 100vw;
+    height: 81.5%;
+    overflow-y: auto;
+}
+
+.settings_header-block {
+    padding: 23px 0px 7px 20px;
+    font-size: 19px;
+    color: brown;
+    border-bottom: 1px solid black;
+    width: 78vw;
+    margin-bottom: 30px;
+}
+
+.form_row{
+    max-width: 83.33%;
+    display: flex;
+}
+
+.labdiv{
+    width: 30%;
+    text-align-last: right;
+    padding: 20px 15px;
+    color: rgb(92, 127, 128);
+    margin-top: auto;
+}
+
+.form_row_input{
+    padding: 10px;
+    width: 70%;
+}
+
+.inputdiv{
+    width: 500px;
+    padding: 11px 15px;
+}
+
+.edit-icon{
+    position: relative;
+    right: 32px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.profile_udt_btn {
+    padding: 7px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background: rgb(73, 80, 179);
+    border: navajowhite;
+    border-radius: 5px;
+    position: relative;
+    left: 29%;
+    top: 39px;
+    cursor: pointer;
+}
+
+.profile_udt_btn:hover{
+    background: rgb(61, 67, 151);
+}
+
+.profile_photo_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-picture{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+#published_posts{
+    display: none;
+}
+
+#draft_posts{
+    display: none;
+}
+
+#settings_Section{
+    display: none;
+}
+
+.active{
+    color: rgb(241, 138, 101);
+}
+.Humburger_sidenav {
+    height: -webkit-fill-available;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding-bottom: 25px;
+  }
+  
+  .Humburger_sidenav_a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .Humburger_sidenav_a:hover {
+    color: #f1f1f1;
+  }
+  
+  .Humburger_sidenav .closebtn {
+    position: absolute;
+    top: 4px;
+    left: -40px;
+    font-size: 38px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: aqua;
+}
+
+.humburger_btn{
+    display: none;
+}
+
+.edit{
+    display: none;
+}
+
+@media only screen and (max-width: 1070px){
+
+    .sidenav{
+        display: none;
+    }
+
+    .Humburger_sidenav_a {
+        padding: 5px 4px 4px 25px;
+        text-decoration: none;
+        font-size: 17px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        width: 144px;
+    }
+
+    .humburger_btn{
+        display: block;
+    }
+
+    .main-body{
+        left: 0;
+    }
+
+    .posts_control_right{
+        right: 25px;
+    }
+
+    .posts_control_bottom{
+        left: 40px;
+    }
+
+    .sidenav__menuitem:active{
+        background: none;
+    }
+
+    .user_posts_a{
+        overflow: hidden;
+        max-width: 42%;
+    }
+    .username{
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+        margin: auto;
+    }
+
+    .navbar__logo{
+        position: absolute;
+        left: 35%;
+    }
+
+    .posts_control-list{
+        margin-left: -12px;
+    }
+
+    .user_posts input{
+        margin-left: 22px;
+        margin-right: 13px;
+    }
+
+    .newpost_post_controls {
+        position: relative;
+        left: -185px;
+        top: 14px;
+    }    
+
+    .mouseOver{
+        background-color: none;
+        box-shadow: none;
+        border: 1px solid rgb(158, 142, 142);
+    }
+
+    .newpost_form_body {
+        width: 98%;
+        padding: 25px;
+        position: absolute;
+        left: -53px;
+        box-shadow: none;
+        overflow-x: hidden;
+    }
+
+    .imageSection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newpost_row {
+        display: flex;
+        margin-bottom: 16px;
+        flex-direction: column;
+    }
+
+    .newpost_custom-file-upload {
+        border: 1px solid #ccc;
+        display: inline-block;
+        cursor: pointer;
+        height: 87px;
+        width: 97%;
+    }
+
+    .newpost_img_lable {
+        margin: 12% 28%;
+    }
+
+    .newpost_col {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .newpost_margin_md {
+        margin-left: 0px;
+        width: 85%;
+    }
+
+    .newpost_form_lable {
+        color: black;
+        font-size: 18px;
+        margin-top: 21px;
+    }
+
+    .newpost_form_lable {
+        color: black;
+        font-size: 18px;
+        margin-top: 21px;
+    }
+
+    .newpost_post_discription {
+        max-width: 95%;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .newpost_save_btn {
+        position: absolute;
+        left: 90%;
+        top: 0px;
+        display: flex;
+        width: 188px;
+    }
+
+    .settings_Section {
+        left: 10px;
+        height: 88%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .labdiv {
+        width: 100%;
+        padding: 20px 15px;
+        color: rgb(92, 127, 128);
+        text-align-last: left;
+    }
+
+    .form_row{
+        flex-direction: column;
+    }
+
+    .form_row_input {
+        padding: 10px;
+        width: 81vw;
+    }
+
+    .profile_udt_btn{
+        left: 3%;
+    }
+
+    .right_column{
+        display: none;
+    }
+
+    .search-bar_div{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-height: 520px){
+
+    .settings_Section{
+        height: 70%;
+    }
+
+}
+
+/*
+
+    Author: Rohit Tiwari
+    Created: 14 July 09:31 AM
+
+*/

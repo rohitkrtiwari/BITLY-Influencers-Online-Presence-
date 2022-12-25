@@ -1,0 +1,8 @@
+RewriteEngine on
+Options +SymLinksIfOwnerMatch -MultiViews
+RewriteRule ^login login.php 
+RewriteRule ^register signup.php 
+RewriteRule ^signup signup.php 
+RewriteRule ^profile profile.php 
+RewriteRule ^contact contact.php 
+RewriteRule ^user/(.*) user.php?email=$1 

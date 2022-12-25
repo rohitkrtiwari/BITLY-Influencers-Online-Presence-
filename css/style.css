@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+    background-image: linear-gradient(290deg, #55df98, #455b97);
+    height: 580px;
+    padding-top: 10px;
+}
+
+.navbar{
+    height: 54px;
+    padding-top: 2px;
+}
+
+.grid{
+    width: 87%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.navbar__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    text-decoration: none;
+}
+
+.navbar__logo img{
+    width: 76px;
+}
+
+.navbar__logo h2{
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 38px;
+}
+
+.navbar__list{
+    display: flex;
+    width: 65%;
+    padding-left: 50px;
+}
+
+.navbar__list a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.u-pull-right{
+    width: 25%;
+    position: absolute;
+    right: 0%;
+}
+
+.login, .signup{
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: auto;
+}
+
+.signup{
+    border: 2px solid white;
+    padding: 6px 19px;
+    border-radius: 20px;
+}
+
+.login{
+    padding-right: 25px;
+}
+
+.signup:hover{
+    border: 1px solid white;
+    color: #3dc981;
+    background-color: white;
+    padding: 6px 19px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.login:hover{
+    text-decoration: none;
+    color: #4c524f;
+}
+
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    font-family: 'Work Sans', sans-serif;
+    margin: auto;
+    height: 80%;
+    color: white;
+    padding-top: 130px;
+}
+
+.firstHalf{
+    width: 60%;
+}
+
+.secondHalf{
+    width: 40%;
+}
+
+.secondHalf img{
+    padding: 0 32%;
+}
+
+.text-big{
+    font-size: 38px;
+}
+
+.text-small{
+    font-size: 18px;
+}
+
+.boxmain-signup a{
+    text-decoration: none;
+    color: white;
+    background-color: #55df98;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.boxmain-signup a:hover{
+    background-color: #38c47b;
+}
+
+#search{
+    text-decoration: none;
+}
+
+.search-bar{
+    padding: 4px 10px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(60, 60, 150);
+    outline: none;
+    color: white;
+    font-size: 16px;
+    display: none;
+    width: 70%;
+}
+
+.search-bar::placeholder{
+    color: white;
+}
+
+#close-icon{
+    font-weight: 900;
+    color: rgb(252, 252, 252);
+    font-size: 22px;
+}
+
+.burger{
+    display: none;
+}
+
+.responsive_body{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1010px){
+    .header{
+        height: inherit;
+    }
+
+    .boxmain-signup{
+        margin-bottom: 35px;
+    }
+}
+
+@media only screen and (max-width: 930px){
+
+    .box-main{
+        padding-top: 70px;
+    }
+    
+
+    .navbar__logo{
+        margin-left: 30px;
+    }
+
+    .header{
+        height: inherit;
+    }
+
+    .search_section{
+        display: none;
+    }
+
+    .main_body{
+        display: none;
+    }
+
+    .responsive_body{
+        padding: 20px 10px;
+        display: block;
+    }
+
+    .res_search_section{
+        margin-top: 50px;
+    }
+
+    .res_body_search_bar{
+        padding: 5px 10px;
+        border: none;
+        border-radius: 10px;
+        margin: 10px 5px;
+        width: 97%;
+    }
+
+    .res_body_search_btn{
+        background: white;
+        border: none;
+        border-radius: 16%;
+        width: 18px;
+        position: absolute;
+        top: 148px;
+        right: 29px;
+    }
+
+    .navbar__list{
+        display: none;
+    }
+
+    .u-pull-right{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .lin{
+        width: 33px;
+        height: 4px;
+        background-color: white;
+        margin: 3px 3px;
+    }
+
+    .burger-nav{
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        text-align: right;
+        width: 200px;
+        position: absolute;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        right: 32px;  
+        top: 90px;
+        padding: 15px;
+        z-index: 1;
+    }
+    .burger-nav__list{
+        text-decoration: none;
+        padding: 15px 20px;
+        color: rgb(211, 159, 159);
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 600;
+    }
+
+    .burger-nav__list:hover{
+        color: black;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .login__signup{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger-nav__login{
+        border: 1px solid #35e088;
+        border-radius: 20px;
+        color: #35e088;
+        text-align: center;
+        padding: 9px 0px;
+    }
+
+    .burger-nav__login:hover{
+        color: white;
+        background-color: #329461;
+    }
+
+    .burger-nav__signup{
+        border: 1px solid #35e088;
+        border-radius: 20px;
+        color: white;
+        background-color: #55df98;
+        text-align: center;
+        padding: 9px 0px;
+    }
+
+    .burger-nav__signup:hover{
+        color: white;
+        background-color: #329461;
+    }
+
+}
+
+
+.main_body{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.paragraph{
+    color: white;
+    margin-bottom: 80px;
+}
+
+.paragraph h1{
+    font-size: 40px;
+}
+
+.paragraph h3{
+    font-size: 19px;
+}
+
+.search_section{
+    width: 77%;
+    height: 70px;
+    margin: 0 12%;
+    text-align: start;
+}
+
+.body_search_bar{
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 40px;
+    padding: 0px 22px;
+    padding-bottom: 5px;
+    width: 87%;
+}
+
+.body_search_bar::placeholder{
+    font-size: 40px;
+}
+.body_search_bar:active{
+    border: none;
+}
+
+.body_search_btn{
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    background: blue;
+    padding-right: 12px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    font-size: 40px;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+/*
+
+    Author: Rohit Tiwari
+    Created: 14 July 09:31 AM
+
+*/
